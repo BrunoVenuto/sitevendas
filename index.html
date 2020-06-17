@@ -4,6 +4,17 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width,user-scalable=0" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript">
+		window.onload = function(){
+			document.querySelector(".menumobile").addEventListener("click",function(){
+					if(document.querySelector(".menu nav ul").style.display == 'flex') {
+						document.querySelector(".menu nav ul").style.display = 'none'
+					}else {
+						document.querySelector(".menu nav ul").style.display = 'flex'
+					}
+			} );
+		};
+	</script>
 	<title>Nome do Site</title>
 </head>
 <body>
@@ -15,6 +26,11 @@
 		</div>
 		<div class="menu">
 			<nav>
+				<div class="menumobile">
+					<div class="mm_line"></div>
+					<div class="mm_line"></div>
+					<div class="mm_line"></div>
+				</div>
 				<ul>
 					<li class="active"><a href="">HOME</a></li>
 					<li><a href="">HOME</a></li>
@@ -44,7 +60,7 @@
 				<a href="">Sobre</a>
 			</div>
 			<div class="banner3">
-				<div class="banner_title">Horário de funcionamento</div>
+			<!--<div class="banner_title">Horário de funcionamento</div>
 				<div class="dia1">
 					<div>
 						Segunda-Sexta
@@ -68,7 +84,7 @@
 					<div>
 						09:00-12:00
 					</div>
-				</div>
+				</div></p>-->
 			</div>
 		</div>
 	</div>
@@ -203,11 +219,11 @@
 			</div>
 		</section>
 		<aside>
-			<div class="widget flex">
+			<div class="widget">
 				<div class="widget_title">
 					<div class="widget_title_text">Departamentos</div>
 					<div class="widget_title_bar"></div>
-					<div class="widget_body">
+					<div class="widget_body flex">
 						<div class="widgetimg">
 							<img src="assets/images/img.jpeg" />
 						</div>
